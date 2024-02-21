@@ -19,16 +19,12 @@ The helper scripts were written with Python 3.7.16 and with the use of the Panda
 You can download the ShapenetSem dataset from https://huggingface.co/datasets/ShapeNet/ShapeNetSem-archive
 
 The ShapenetSem dataset comes in the following structure:
+
     - models-binvox
-        - ...
     - models-binvox-solid
-        - ...
     - models-COLLADA
-        - ...
     - models-OBJ
-        - ...
     - models-textures
-        - ...
     - categories.synset.csv
     - densities.csv
     - materials.csv
@@ -99,3 +95,8 @@ You run it from inside your Blender installation directory using
 Here is an example computer model rendered with 8 different bird-eye views + 6 canonical views:
 
 ![Computer](examples/RGB_and_Depth.PNG)
+
+
+Code based on:
+https://github.com/panmari/stanford-shapenet-renderer
+https://github.com/JavonneM/BlenderToRGBD
