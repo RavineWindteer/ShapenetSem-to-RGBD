@@ -48,7 +48,6 @@ This will correct the .mtl files. You can also optionally also save the correcte
 Finally, the .mtl files assume that the textures are in the same folder as the objects. So you can either:
 
     - Copy the textures files into the models folder (or vice-versa), or;
-
     - Create a new folder and copy the models and textures into it.
 
 Either way, Blender will be able to load the files correctly.
@@ -98,5 +97,6 @@ Here is an example computer model rendered with 8 different bird-eye views + 6 c
 
 
 Code based on:
+
 https://github.com/panmari/stanford-shapenet-renderer
 https://github.com/JavonneM/BlenderToRGBD
