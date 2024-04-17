@@ -1,11 +1,11 @@
 # From Blender instalation directory
-blender --background --python D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem_HuggingFace/ShapeNetSem-ToRGBD/render_blender.py -- --output_folder D:/outputs --up 0\\,0\\,1 --front 1\\,-3.845484641828989e-8\\,0 --aligned_dims 80.348755\\,109.77222\\,7.355871 --unit 0.022633 --canonical_views True D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/models-OBJ/models/4b3e576378e5571aa9a81fd803d87d3e.obj
+blender --background --python D:/Documentos/ShapenetSem-to-RGBD/ShapenetSem-to-RGBD/render_blender.py -- --output_folder D:/outputs --up 0\\,0\\,1 --front 1\\,-3.845484641828989e-8\\,0 --aligned_dims 80.348755\\,109.77222\\,7.355871 --unit 0.022633 --canonical_views True D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/models-OBJ/models/4b3e576378e5571aa9a81fd803d87d3e.obj
 
 # From code directory
 python fix_shapenetsem.py --directory D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/models-OBJ-textures/models-and-textures/ --output_folder D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/models-OBJ-textures/mtl_fix/
 
 # From code directory
-python generate_commands.py --metadata D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/select2.txt --obj_directory D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/models-OBJ-textures/models-and-textures/ --render_blender_path D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-ToRGBD/render_blender.py --output_directory D:/Outputs
+python generate_commands.py --metadata D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/select2.txt --obj_directory D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-master/ShapeNetSem/models-OBJ-textures/models-and-textures/ --render_blender_path D:/Documentos/ShapenetSem-to-RGBD/ShapenetSem-to-RGBD/render_blender.py --output_directory D:/Outputs
 
 # From Blender instalation directory
-python D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-ToRGBD/render_blender_parallel.py --file D:/Documentos/ShapeNetSem_HuggingFace/ShapeNetSem-ToRGBD/commands.txt
+python D:/Documentos/ShapenetSem-to-RGBD/ShapenetSem-to-RGBD/render_blender_parallel.py --file D:/Documentos/ShapenetSem-to-RGBD/ShapenetSem-to-RGBD/commands.txt

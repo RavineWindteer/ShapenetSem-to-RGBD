@@ -80,8 +80,12 @@ for w in range(ImageWidth):
 # since Blender uses column-major format for images
 projection_image_flat = [item for sublist in projection_image for item in sublist]
 projection_image_rgba_flat = []
-for value in projection_image_flat:
-    projection_image_rgba_flat.extend([value, value, value, 1.0])
+if args.engine == 'CYCLES':
+    for value in projection_image_flat:
+        projection_image_rgba_flat.extend([value, value, value, 1.0])
+else:
+    for value in projection_image_flat:
+        projection_image_rgba_flat.extend([1.0, 1.0, 1.0, 1.0])
 
 # Set up rendering
 context = bpy.context
